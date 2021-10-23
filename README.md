@@ -1,1 +1,1 @@
-# ZkSARK
+# ZkSNARK
