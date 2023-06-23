@@ -1,5 +1,5 @@
 
-#Introduction
+# Introduction
  Plonk protocol relies on a common reference string (CRS) as a public parameter for proving & verifying. The CRS is generated in advance by a trusted party. The random and private data used to create the CRS, called ‘toxic waste’ requires to be kept secure during the process an  destroyed upon the CRS is created. Otherwise, it can be used by an adversary to make false proofs.
  
 The creation of public parameters for zkSNARKs is called the setup ceremony which is run by a Multi-Party Computation (MPC) protocol. 
