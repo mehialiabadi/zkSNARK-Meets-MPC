@@ -1,6 +1,6 @@
 
 # Introduction
- Plonk protocol relies on a common reference string (CRS) as a public parameter for proving & verifying. The CRS is generated in advance by a trusted party. The random and private data used to create the CRS, called ‘toxic waste’ requires to be kept secure during the process an  destroyed upon the CRS is created. Otherwise, it can be used by an adversary to make false proofs.
+ Plonk protocol relies on a common reference string (CRS) as a public parameter for proving & verifying. The CRS is generated in advance by a trusted party. The random and private data used to create the CRS, called ‘toxic waste’ requires to be kept secure during the process and destroyed upon the CRS is created. Otherwise, it can be used by an adversary to make false proofs.
  
 The creation of public parameters for zkSNARKs is called the setup ceremony which is run by a Multi-Party Computation (MPC) protocol. 
 
@@ -13,7 +13,7 @@ In 2017, Bowe et al. introduced another family of MPC protocols \cite{bowe2017sc
 
 
 ## Pre-requirements
-There are a bunch of requirements and process to seup a ceremony including, participant selection, participanr regustration, defining the cryptographic paramerets, prepring application, hardwar, peraring instruction and so on. Following we are going to go through the actual mpc protocol that palyers run and acheive some randomness which will be later in the  keys (proof and verification) generation process.
+There are a bunch of requirements and processes to set up a ceremony including, participant selection, participant registration, defining the cryptographic parameters, preparing applications,hardware, preparing instructions and so on. Following we are going to go through the actual mpc protocol that palyers run and achieve some randomness which will be later in the keys (proof and verification) generation process.
 ```
   
 
