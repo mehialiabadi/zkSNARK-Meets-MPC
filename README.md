@@ -12,15 +12,15 @@ In other words, by increasing the number of honest and independent contributors,
 In 2017, Bowe et al. introduced another family of MPC protocols \cite{bowe2017scalable} specifically for pairing-based zk-SNARKs like Groth16. (It's out of our scope).
 
 
-##Pre-requirements
+## Pre-requirements
 There are a bunch of requirements and process to seup a ceremony including, participant selection, participanr regustration, defining the cryptographic paramerets, prepring application, hardwar, peraring instruction and so on. Following we are going to go through the actual mpc protocol that palyers run and acheive some randomness which will be later in the  keys (proof and verification) generation process.
 ```
   
 
-##MPC Protocol
+## MPC Protocol
 Once the ceremony starts,  all registered participants can simply run the open-sourced client software to participate in the ceremony. All of whom will be randomly ordered into a public queue. To reduce the waiting time of the activity, the mpc-server continuously monitors the active participant’s client software and applies a First-Come-First-Serve strategy on all active and prioritized participants.
 %Then, the protocol proceeds as follows:
-###Trusted setup algorithm
+### Trusted setup algorithm
  The underlying cryptographic algorithms for handling the computation and verification  of PLonk CRS on  the defined elliptic curve points run as follows:
  ```
 
@@ -43,7 +43,7 @@ Once the ceremony starts,  all registered participants can simply run the open-s
  
 
 
-##Security of  MPC Ceremony
+## Security of  MPC Ceremony
 
 The security of the ceremony relies on honest participants. If there is only one participant who behaves honestly, the whole ceremony is succeeded 
 
