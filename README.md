@@ -1,3 +1,4 @@
+$
 \section{Introduction}
  Plonk protocol relies on a common reference string (CRS) as a public parameter for proving & verifying. The CRS is generated in advance by a trusted party. The random and private data used to create the CRS, called ‘toxic waste’ requires to be kept secure during the process an  destroyed upon the CRS is created. Otherwise, it can be used by an adversary to make false proofs.
  
@@ -73,4 +74,5 @@ Once the ceremony starts,  all registered participants can simply run the open-s
 The security of the ceremony relies on honest participants. If there is only one participant who behaves honestly, the whole ceremony is succeeded 
 
  %whichcurvee? BN254 and BLS12–381.
+ $
 
