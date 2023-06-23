@@ -6,13 +6,13 @@ The creation of public parameters for zkSNARKs is called the setup ceremony whic
 
 Setup MPC ceremony is an interactive protocol involving multiple parties who contribute randomness to iteratively build the CRS. A typical ceremony consists of the number of players, the coordinator, and the verifier. The MPC protocols are always of a round-robin nature, where a player receives a  message from the previous player. Then the player adds their input to accumulated randomness before passing it into the next player. In the end, the final result is the CRS. In the intermediate state, as it is being passed between players, the message is referred to as the transcript.
 
-In 2015, Ben-Sasson et al. in \cite{} proposed a family of MPC protocols for ZKPs. They have proven that the CRS generated with these protocols is secure as long as at least one contributing party behaves honestly. 
+In 2015, Ben-Sasson et al. proposed a family of MPC protocols for ZKPs. They have proven that the CRS generated with these protocols is secure as long as at least one contributing party behaves honestly. 
 In other words, by increasing the number of honest and independent contributors, the probability that all participants are dishonest is reduced to the point of negligibly.
 
-In 2017, Bowe et al. introduced another family of MPC protocols \cite{bowe2017scalable} specifically for pairing-based zk-SNARKs like Groth16. (It's out of our scope).
+In 2017, Bowe et al. introduced another family of MPC protocols  specifically for pairing-based zk-SNARKs like Groth16. (It's out of our scope).
 
 
-## Pre-requirements
+## Pre-requirements of ceremony
 There are a bunch of requirements and processes to set up a ceremony including, participant selection, participant registration, defining the cryptographic parameters, preparing applications,hardware, preparing instructions and so on. Following we are going to go through the actual mpc protocol that palyers run and achieve some randomness which will be later in the keys (proof and verification) generation process.
 ```
   
@@ -30,7 +30,7 @@ Once the ceremony starts,  all registered participants can simply run the open-s
      
    $transcript_1$: $(g_1.{z_1^{0}}, ..., g_1.{z_1^{max}}) \in G1$ , 
    $z_1.g_2 \in G$
-\item Participant 2 ($P_2$) receives $transcript_1$  from $P_2$ and rolls in their toxic random ($z_2$) to generate their own transcript:
+ Participant 2 ($P_2$) receives $transcript_1$  from $P_2$ and rolls in their toxic random ($z_2$) to generate their own transcript:
 
   $transcript_2$:  $(g_1.z_1^{0}z_2^{0}, ..., g_1.z_1^{max}z_2^{max}) \in G1$ , 
      $z_1.z_2.g_2 \in G2$
