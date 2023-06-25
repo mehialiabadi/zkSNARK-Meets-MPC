@@ -25,7 +25,7 @@ Then  she chooses random toxic  $z_1$ and build the  $transcript_1$ as follows:
    $transcript_1: (g_1.{z_1^{0}}, ..., g_1.{z_1^{max}}) \in G1 , z_1.g_2 \in G$
    
 Participant $P_2$ receives $transcript_1$  from $P_1$ and rolls in their toxic random $z_2$ to generate their own transcript:
-  $transcript_2:  (g_1.z_1^{0}z_2^{0}, ..., g_1.z_1^{max}z_2^{max}) \in G1$ , 
+  $transcript_2:  (g_1.z_1^{0}z_2^{0}, ..., g_1.z_1^{max}z_2^{max}) \in G1 , 
      z_1.z_2.g_2 \in G2$
 
 Likewise, participant $P_n$ takes $transcript_{n-1}$ from $P_{n-1}$ and outputs final randomness which be used to generate proof and verification keys. 
