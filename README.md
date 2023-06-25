@@ -16,9 +16,7 @@ There are a bunch of requirements and processes to set up a ceremony including, 
 ```
 ## MPC Protocol
 Once the ceremony starts,  all registered participants can simply run the open-sourced client software to participate in the ceremony. All of whom will be randomly ordered into a public queue. To reduce the waiting time of the activity, the mpc-server continuously monitors the active participant’s client software and applies a First-Come-First-Serve strategy on all active and prioritized participants.
-%Then, the protocol proceeds as follows:
-### Trusted setup algorithm
- The underlying cryptographic algorithms for handling the computation and verification  of PLonk CRS on  the defined elliptic curve points run as follows:
+
  ```
      The first participant $P_1$ runs the setup by providing the number of G1 and G2 points as input arguments. 
      Then  she chooses random toxic  $z_1$ and build the  $transcript_1$ as follows: 
