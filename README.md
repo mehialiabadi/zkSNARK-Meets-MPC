@@ -8,11 +8,11 @@ Setup MPC ceremony is an interactive protocol involving multiple parties who con
 In 2015, Ben-Sasson et al. proposed a family of MPC protocols for ZKPs. They have proven that the CRS generated with these protocols is secure as long as at least one contributing party behaves honestly. 
 In other words, by increasing the number of honest and independent contributors, the probability that all participants are dishonest is reduced to the point of negligibly.
 
-In 2017, Bowe et al. introduced another family of MPC protocols  specifically for pairing-based zk-SNARKs like Groth16. (It's out of our scope).
+In 2017, Bowe et al. introduced another family of MPC protocols specifically for pairing-based zk-SNARKs like Groth16. (It's out of our scope).
 
 
 ## Pre-requirements of ceremony
-There are a bunch of requirements and processes to set up a ceremony including, participant selection, participant registration, defining the cryptographic parameters, preparing applications,hardware, preparing instructions and so on. Following we are going to go through the actual mpc protocol that palyers run and achieve some randomness which will be later in the keys (proof and verification) generation process.
+There are a bunch of requirements and processes to set up a ceremony including, participant selection, participant registration, defining the cryptographic parameters, preparing applications and hardware, preparing instructions, and so on. Following we are going to go through the actual mpc protocol that players run and achieve some randomness which will be used later in the keys (proof and verification) generation process.
 ```
 ## MPC Protocol
 Once the ceremony starts,  all registered participants can simply run the open-sourced client software to participate in the ceremony. All of whom will be randomly ordered into a public queue. To reduce the waiting time of the activity, the mpc-server continuously monitors the active participant’s client software and applies a First-Come-First-Serve strategy on all active and prioritized participants.
