@@ -22,7 +22,7 @@ client software to participate in the ceremony. All of whom will be randomly ord
 The first participant $P_1$ runs the setup by providing the number of G1 and G2 points as input arguments.
 
 Then  she chooses random toxic  $z_1$ and build the  $transcript_1$ as follows: 
-   transcript_1:$ (g_1.{z_1^{0}}, ..., g_1.{z_1^{max}}) \in G1 , z_1.g_2 \in G$
+   transcript_1:$ (g_1.{z_1}^{0}, ..., g_1.z_1^{max}) \in G1 , z_1.g_2 \in G$
    
 Participant $P_2$ receives transcript_1 from $P_1$ and rolls in their toxic random $z_2$ to generate their own transcript_2: $(g_1.z_1^{0}.z_2^{0}, ..., g_1.z_1^{max}.z_2^{max}) \in G1, z_1.z_2.g_2 \in G2$
 
