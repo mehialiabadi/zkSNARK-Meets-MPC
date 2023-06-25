@@ -13,9 +13,10 @@ In 2017, Bowe et al. introduced another family of MPC protocols specifically for
 
 ## Pre-requirements of ceremony
 There are a bunch of requirements and processes to set up a ceremony including, participant selection, participant registration, defining the cryptographic parameters, preparing applications and hardware, preparing instructions, and so on. Following we are going to go through the actual mpc protocol that players run and achieve some randomness which will be used later in the keys (proof and verification) generation process.
-```
+
 ## MPC Protocol
-Once the ceremony starts,  all registered participants can simply run the open-sourced client software to participate in the ceremony. All of whom will be randomly ordered into a public queue. To reduce the waiting time of the activity, the mpc-server continuously monitors the active participant’s client software and applies a First-Come-First-Serve strategy on all active and prioritized participants.
+Once the ceremony starts,  all registered participants can simply run the open-sourced
+client software to participate in the ceremony. All of whom will be randomly ordered into a public queue. To reduce the waiting time of the activity, the mpc-server continuously monitors the active participant’s client software and applies a First-Come-First-Serve strategy on all active and prioritized participants.
 
 
 The first participant $P_1$ runs the setup by providing the number of G1 and G2 points as input arguments.
